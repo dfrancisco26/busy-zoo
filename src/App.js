@@ -1,12 +1,12 @@
 import { useState } from 'react';
-
+import OpenClosedSign from './OpenClosedSign';
 import './App.css';
 
 function App() {
 
 
-//  const [zooIsOpen, setZooIsOpen] = useState(true);
-//  const [parade, setParade] = useState([]);
+  const [zooIsOpen, setZooIsOpen] = useState(true);
+  const [parade, setParade] = useState([]);
   const [batSize, setBatSize] = useState(30);
   const [boarSize, setBoarSize] = useState(30);
 
@@ -24,6 +24,10 @@ function App() {
             <button onClick={() => setBoarSize(boarSize + 4)}>Grow Boar</button>
             <button onClick={() => setBoarSize(boarSize - 4)}>Shrink Boar</button>
           </div>
+        </div>
+        <div className='openClosedSign'>
+          <OpenClosedSign zooIsOpen={zooIsOpen} />
+          <button onClick={() => setZooIsOpen(!zooIsOpen)}>Toggle Zoo</button>
         </div>
       </header>
     </div>
