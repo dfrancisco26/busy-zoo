@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import OpenClosedSign from './OpenClosedSign';
+import OpenClosedSign from './OpenClosedSign.js';
 import './App.css';
-import AnimalList from './AnimalList';
+import AnimalList from './AnimalList.js';
 function App() {
 
 
