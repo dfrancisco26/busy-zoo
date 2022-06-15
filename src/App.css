@@ -40,6 +40,34 @@
 
 
 .fight {
-  display:flex;
+  display: flex;
   justify-content: space-around;
+}
+
+.openClosedSign {
+  width: fit-content;
+  padding: 24px;
+  display: flex;
+  border: 2px solid black;
+  justify-content: center;
+  margin-left: 50%;
+  border-radius: 12px;
+}
+
+.open {
+  background-color: greenyellow;
+  opacity: 70%;
+  color: black;
+}
+
+.closed {
+  background-color: orangered;
+  opacity: 60%;
+  color: black;
+}
+
+.parade {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
 }
