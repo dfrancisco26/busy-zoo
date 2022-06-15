@@ -1,7 +1,7 @@
 import React from 'react';
 import Animal from './Animal';
 
-export default function animalList({ animals }) {
+export default function AnimalList({ animals }) {
   return (
     <div className='parade'>
       {
