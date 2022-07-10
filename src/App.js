@@ -38,7 +38,7 @@ function App() {
     <div className="App">
 
       <header className='header'>
-      <h1>animal</h1>
+        <h1>animal</h1>
         <div className='fight'>
           <div className='competitor'>
             <p style={{ fontSize: `${batSize}px` }}> 🦇 </p>
