@@ -67,27 +67,27 @@ function App() {
         </div>
 
       </header>
-      <div className='openClosedSign'>
-        <OpenClosedSign zooIsOpen={zooIsOpen} />
-        <button onClick={() => setZooIsOpen(!zooIsOpen)}>Toggle Zoo</button>
-      </div>
-      <div>
-        <AnimalList animals={animals} />
-        <button 
-          onClick={handleSnailClick}>
-              Add Snail
-        </button>
-        <button onClick={handleFlamingoClick}>
-            Add Flamingo
-        </button>
-        <button onClick={handleSlothClick}>
-            Add Sloth
-        </button>
-        <button onClick={handleTigerClick}>
-            Add Tiger
-        </button>
 
-      </div>
+      <OpenClosedSign zooIsOpen={zooIsOpen} className='openClosedSign'/>
+      <button onClick={() => setZooIsOpen(!zooIsOpen)}>Toggle Zoo</button>
+
+
+      <AnimalList animals={animals} />
+      <button 
+        onClick={handleSnailClick}>
+              Add Snail
+      </button>
+      <button onClick={handleFlamingoClick}>
+            Add Flamingo
+      </button>
+      <button onClick={handleSlothClick}>
+            Add Sloth
+      </button>
+      <button onClick={handleTigerClick}>
+            Add Tiger
+      </button>
+
+
     </div>
   );
 }
